@@ -1,7 +1,5 @@
 # hackhask
 
-[Tutorial](http://learnyouahaskell.com/chapters)
-
 HackHask is me hacking at haskell until it is beaten into submission and I have 
 emerged victoriously, master of all I see! Mwahahaha!
 
