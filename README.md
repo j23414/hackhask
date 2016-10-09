@@ -15,6 +15,7 @@ $ ghci                     #  Welcome to the world of Haskell
 GHCi, version 8.0.1: http://www.haskell.org/ghc/  :? for help
 Prelude> :l script         -- That's the letter L for LOAD script.hs
 Prelude> :quit             -- You are leaving the world of Haskell
-$ ghc script.hs            # compile haskel script
+$ ghc script.hs            # compile haskel script to native code
 $ ./script                 # run from bash command line
+$ runhaskell script.hs     # run code using ghci byte code interpreter
 ```

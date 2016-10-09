@@ -42,7 +42,8 @@ fst (8,11)               -- 8, first element in a tuple
 snd (8,11)               -- 11, second item
 fst ("Wow", False)       -- "Wow", works on strings
 
-zip [1,2,3,4,5] [5,5,5,5,5]
+zip [1,2,3,4,5] [5,5,5,5,5]         -- pairs two lists elements as tuples
 -- [(1,5),(2,5),(3,5),(4,5),(5,5)]
 zip [1..5] ["one","two","three","four","five"]
 -- [(1,"one"),(2,"two"),(3,"three"),(4,"four"),(5,"five")]
+

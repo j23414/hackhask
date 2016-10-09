@@ -3,5 +3,7 @@
 adjnouncombo adjs nouns = [adj ++ " " ++ noun | adj <- adjs, noun=nouns]
 
 -- Converts DNA to RNA, input is case insensitive
-import Data.Char        -- need to get toUpper
-dtoRNA xs = [if ((toUpper x)/='T') then toUpper x else 'U' | x<-xs, x `elem` ['A','C','G','T','a','c','g','t']]
+import Data.Char        -- get toUpper function
+toUpperStr xs = [toUpper x| x<-xs]
+dtoRNA xs = [if (x/='T') then x else 'U' | x<-toUpperStr xs, x `elem` ['A','C','G','T']]
+
