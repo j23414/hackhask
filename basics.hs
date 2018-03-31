@@ -1,3 +1,5 @@
+#! /usr/bin/env ghci
+
 -- Lists
 
 [1,2,3,4]      -- bare list
