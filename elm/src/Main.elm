@@ -1,9 +1,11 @@
 module Main exposing (..)
-
+import Browser
 import Html exposing ( Html, button, div, text)
+import Html.Events exposing (onClick)
+
 -- import Browser exposing (sandbox)
 
-initModel = 0
+-- initModel = 0
 
 type Msg = Increment | Decrement
 
@@ -18,11 +20,14 @@ update msg model =
 view model =
   div []
     [ button [ onClick Decrement ] [ text "-" ]
-    , div [] [ text (toString model) ]
+    , div [] [ text (String.fromInt model) ]
     , button [ onClick Increment ] [ text "+" ]
     ]
 
-main = Html { model = initModel, view = view, update = update }
+main = 
+  Browser.sandbox { init = 0, update = update, view = view }
+
+-- main = Html { model = initModel, view = view, update = update }
 
 {-- 
 main : HTML () Model Msg

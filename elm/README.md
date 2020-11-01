@@ -1,6 +1,9 @@
 # ELM 
 
-Functional programming in javascript
+Functional programming language that compiles to JavaScript.
+
+* [Instructions to Install Elm](https://guide.elm-lang.org/install/elm.html)
+* [Official Elm Guide](https://guide.elm-lang.org/)
 
 * [Elm crash course - building unbreakable webapps fast](https://youtu.be/kEitFAY7Gc8)
 
